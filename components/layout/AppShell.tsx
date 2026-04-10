@@ -21,7 +21,7 @@ export function AppShell({ children }: AppShellProps) {
           <button
             onClick={() => navigate("dashboard")}
             className="flex items-center gap-2.5 min-w-0 flex-shrink-0 group"
-            aria-label="CurveCraft — Go to summary dashboard"
+            aria-label="GradeForge — Go to summary dashboard"
           >
             {/* Logo mark */}
             <div className="w-7 h-7 rounded-lg bg-indigo-600 dark:bg-indigo-500 flex items-center justify-center flex-shrink-0 group-hover:bg-indigo-700 dark:group-hover:bg-indigo-400 transition-colors">
@@ -42,7 +42,7 @@ export function AppShell({ children }: AppShellProps) {
             </div>
             <div className="min-w-0">
               <span className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 tracking-tight">
-                CurveCraft
+                GradeForge
               </span>
               <span className="hidden sm:inline text-xs text-neutral-400 dark:text-neutral-600 ml-1.5">
                 by Zain Ali Rizvi

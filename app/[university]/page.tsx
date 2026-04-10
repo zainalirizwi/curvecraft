@@ -91,7 +91,7 @@ export async function generateMetadata({
   const config = UNIVERSITY_MAP[params.university.toLowerCase()];
   if (!config) return {};
 
-  const title = `${config.shortName} CGPA & GPA Calculator — CurveCraft`;
+  const title = `${config.shortName} CGPA & GPA Calculator — GradeForge`;
 
   return {
     title,

@@ -177,7 +177,7 @@ const ITEMS: AccordionItem[] = [
           ))}
         </ul>
         <p>
-          CurveCraft&apos;s predictor uses reasonable proxy signals (class standing, difficulty,
+          GradeForge&apos;s predictor uses reasonable proxy signals (class standing, difficulty,
           strictness, class size) to estimate an outcome — but it cannot know the actual
           distribution of your class&apos;s performance. Treat predictions as informed estimates,
           not guarantees.
@@ -222,10 +222,10 @@ const ITEMS: AccordionItem[] = [
     title: "Are these results official?",
     content: (
       <p>
-        No. CurveCraft is an academic planning tool for students. All calculations —
+        No. GradeForge is an academic planning tool for students. All calculations —
         whether exact or predicted — are advisory only and are based on the data you enter.
         They do not reflect any official academic record. Always consult your institution&apos;s
-        official systems for verified grades and CGPA. CurveCraft stores all data locally
+        official systems for verified grades and CGPA. GradeForge stores all data locally
         in your browser and does not send any information to a server.
       </p>
     ),
@@ -247,13 +247,13 @@ export function ExplanationPanel() {
   return (
     <SectionContainer
       title="How It Works"
-      description="Transparent documentation of every calculation and algorithm in CurveCraft."
+      description="Transparent documentation of every calculation and algorithm in GradeForge."
     >
       <div className="card p-4 sm:p-6">
         <div className="flex items-center gap-2.5 mb-5">
           <BookOpen size={18} className="text-indigo-600 dark:text-indigo-400" />
           <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            CurveCraft uses entirely deterministic, auditable math. No black boxes.
+            GradeForge uses entirely deterministic, auditable math. No black boxes.
           </p>
         </div>
         <Accordion items={ITEMS} />
@@ -262,7 +262,7 @@ export function ExplanationPanel() {
       {/* Attribution */}
       <div className="text-center pt-2 pb-4">
         <p className="text-xs text-neutral-400 dark:text-neutral-600">
-          CurveCraft — built with care by{" "}
+          GradeForge — built with care by{" "}
           <span className="text-neutral-600 dark:text-neutral-400 font-medium">Zain Ali Rizvi</span>
         </p>
       </div>

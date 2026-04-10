@@ -34,7 +34,7 @@ export function OnboardingPanel() {
       <div className="flex items-start justify-between gap-3 mb-4">
         <div>
           <p className="text-sm font-semibold text-indigo-800 dark:text-indigo-200">
-            Welcome to CurveCraft
+            Welcome to GradeForge
           </p>
           <p className="text-xs text-indigo-700/70 dark:text-indigo-300/70 mt-0.5">
             Here&apos;s how to get started in four steps.

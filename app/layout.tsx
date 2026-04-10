@@ -7,8 +7,8 @@ const SITE_URL = "https://www.gradeforge.site";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "CurveCraft — UCP, UMT, UOL CGPA & GPA Calculator Pakistan",
-    template: "%s | CurveCraft",
+    default: "GradeForge — UCP, UMT, UOL CGPA & GPA Calculator Pakistan",
+    template: "%s | GradeForge",
   },
   description:
     "Free CGPA and GPA calculator for Pakistani university students. Supports UCP, UMT, UOL, HEC grading scales. Calculate semester GPA, predict relative grades, and simulate what-if scenarios.",
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_URL,
-    siteName: "CurveCraft",
-    title: "CurveCraft — UCP, UMT, UOL CGPA & GPA Calculator Pakistan",
+    siteName: "GradeForge",
+    title: "GradeForge — UCP, UMT, UOL CGPA & GPA Calculator Pakistan",
     description:
       "Free CGPA and GPA calculator for Pakistani university students. Supports UCP, UMT, UOL, and HEC grading scales. Predict grades and simulate semester outcomes.",
     images: [
@@ -43,13 +43,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "CurveCraft — CGPA Calculator for Pakistani Universities",
+        alt: "GradeForge — CGPA Calculator for Pakistani Universities",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "CurveCraft — CGPA & GPA Calculator for Pakistani Universities",
+    title: "GradeForge — CGPA & GPA Calculator for Pakistani Universities",
     description:
       "Free tool for UCP, UMT, UOL students. Calculate CGPA, predict grades, simulate semester outcomes.",
     images: ["/og-image.png"],
@@ -72,7 +72,7 @@ export const viewport: Viewport = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "CurveCraft",
+  name: "GradeForge",
   url: SITE_URL,
   description:
     "Free CGPA and GPA calculator for Pakistani university students supporting UCP, UMT, UOL, and HEC grading scales.",
@@ -109,7 +109,7 @@ export default function RootLayout({
         <AppProvider>{children}</AppProvider>
         {/* SEO content — visible to crawlers, useful to users */}
         <section
-          aria-label="About CurveCraft"
+          aria-label="About GradeForge"
           className="max-w-screen-xl mx-auto px-4 sm:px-6 pb-24 lg:pb-10 pt-4 border-t border-neutral-200 dark:border-neutral-800"
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-xs text-neutral-400 dark:text-neutral-600">
@@ -157,7 +157,7 @@ export default function RootLayout({
                 About
               </p>
               <p className="leading-relaxed">
-                CurveCraft is a free academic utility built for Pakistani
+                GradeForge is a free academic utility built for Pakistani
                 university students. All calculations are done in your browser
                 — no data is sent to any server.
               </p>
