@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Google Fonts ──────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ─── Base Resets ────────────────────────────────────────────────────────────── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    /* Never lock zoom — respect the browser */
+    touch-action: manipulation;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100;
+    min-height: 100vh;
+    min-height: 100dvh;
+    overscroll-behavior-y: none;
+  }
+
+  /* Prevent layout break when mobile keyboard opens */
+  input, textarea, select {
+    font-size: 16px; /* Prevents iOS auto-zoom on input focus */
+  }
+
+  /* Focus rings — accessible and tasteful */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-indigo-500;
+    border-radius: 4px;
+  }
+
+  /* Scrollbar — subtle on desktop */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-300 dark:bg-neutral-700;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-400 dark:bg-neutral-600;
+  }
+}
+
+/* ─── Reduced Motion ─────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─── Component Utilities ────────────────────────────────────────────────────── */
+@layer components {
+  .card {
+    @apply bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl shadow-sm;
+  }
+
+  .input-field {
+    @apply w-full rounded-lg border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900
+           px-3 py-2 text-sm text-neutral-900 dark:text-neutral-100
+           placeholder-neutral-400 dark:placeholder-neutral-600
+           focus:outline-none focus:ring-2 focus:ring-indigo-500/40 focus:border-indigo-500 dark:focus:border-indigo-400
+           transition-colors duration-150;
+  }
+
+  .select-field {
+    @apply input-field appearance-none cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg
+           bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600
+           text-white text-sm font-medium px-4 py-2
+           transition-colors duration-150
+           focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg
+           border border-neutral-300 dark:border-neutral-700
+           bg-white dark:bg-neutral-900
+           hover:bg-neutral-50 dark:hover:bg-neutral-800/80
+           text-neutral-700 dark:text-neutral-300 text-sm font-medium px-4 py-2
+           transition-colors duration-150;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-lg
+           text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200
+           hover:bg-neutral-100 dark:hover:bg-neutral-800/60
+           text-sm px-2.5 py-1.5
+           transition-colors duration-150;
+  }
+
+  .btn-danger {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-lg
+           text-red-500 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/40
+           text-sm px-2.5 py-1.5
+           transition-colors duration-150;
+  }
+
+  .section-title {
+    @apply text-lg font-semibold text-neutral-900 dark:text-neutral-100;
+  }
+
+  .section-desc {
+    @apply text-sm text-neutral-500 dark:text-neutral-400;
+  }
+
+  .label {
+    @apply block text-xs font-medium text-neutral-600 dark:text-neutral-400 mb-1;
+  }
+
+  .metric-value {
+    @apply text-3xl font-semibold tracking-tight text-neutral-900 dark:text-neutral-100;
+  }
+
+  .metric-label {
+    @apply text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400;
+  }
+
+  .divider {
+    @apply border-t border-neutral-200 dark:border-neutral-800;
+  }
+}
+
+/* ─── Safe Area Support ──────────────────────────────────────────────────────── */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+/* ─── Sidebar / Nav Transition ───────────────────────────────────────────────── */
+.nav-link {
+  @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium
+         text-neutral-600 dark:text-neutral-400
+         hover:bg-neutral-100 dark:hover:bg-neutral-800/60
+         hover:text-neutral-900 dark:hover:text-neutral-100
+         transition-colors duration-150 cursor-pointer;
+}
+
+.nav-link-active {
+  @apply bg-indigo-50 dark:bg-indigo-950/60
+         text-indigo-700 dark:text-indigo-300;
+}

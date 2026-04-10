@@ -1,0 +1,83 @@
+import type { GradingScale } from "@/types";
+
+export const PRESET_GRADING_SCALES: GradingScale[] = [
+  {
+    id: "hec-pakistan",
+    name: "HEC Pakistan (Standard)",
+    isPreset: true,
+    grades: [
+      { id: "hec-a",  grade: "A",  min: 85, max: 100, points: 4.0 },
+      { id: "hec-am", grade: "A-", min: 80, max: 84,  points: 3.67 },
+      { id: "hec-bp", grade: "B+", min: 75, max: 79,  points: 3.33 },
+      { id: "hec-b",  grade: "B",  min: 70, max: 74,  points: 3.0 },
+      { id: "hec-bm", grade: "B-", min: 65, max: 69,  points: 2.67 },
+      { id: "hec-cp", grade: "C+", min: 60, max: 64,  points: 2.33 },
+      { id: "hec-c",  grade: "C",  min: 55, max: 59,  points: 2.0 },
+      { id: "hec-cm", grade: "C-", min: 50, max: 54,  points: 1.67 },
+      { id: "hec-d",  grade: "D",  min: 45, max: 49,  points: 1.0 },
+      { id: "hec-f",  grade: "F",  min: 0,  max: 44,  points: 0.0 },
+    ],
+  },
+  {
+    id: "us-standard",
+    name: "US Standard (4.0)",
+    isPreset: true,
+    grades: [
+      { id: "us-a",  grade: "A",  min: 93, max: 100, points: 4.0 },
+      { id: "us-am", grade: "A-", min: 90, max: 92,  points: 3.7 },
+      { id: "us-bp", grade: "B+", min: 87, max: 89,  points: 3.3 },
+      { id: "us-b",  grade: "B",  min: 83, max: 86,  points: 3.0 },
+      { id: "us-bm", grade: "B-", min: 80, max: 82,  points: 2.7 },
+      { id: "us-cp", grade: "C+", min: 77, max: 79,  points: 2.3 },
+      { id: "us-c",  grade: "C",  min: 73, max: 76,  points: 2.0 },
+      { id: "us-cm", grade: "C-", min: 70, max: 72,  points: 1.7 },
+      { id: "us-dp", grade: "D+", min: 67, max: 69,  points: 1.3 },
+      { id: "us-d",  grade: "D",  min: 60, max: 66,  points: 1.0 },
+      { id: "us-f",  grade: "F",  min: 0,  max: 59,  points: 0.0 },
+    ],
+  },
+  {
+    id: "canadian-standard",
+    name: "Canadian Standard",
+    isPreset: true,
+    grades: [
+      { id: "ca-ap",  grade: "A+", min: 90, max: 100, points: 4.0 },
+      { id: "ca-a",   grade: "A",  min: 85, max: 89,  points: 4.0 },
+      { id: "ca-am",  grade: "A-", min: 80, max: 84,  points: 3.7 },
+      { id: "ca-bp",  grade: "B+", min: 77, max: 79,  points: 3.3 },
+      { id: "ca-b",   grade: "B",  min: 73, max: 76,  points: 3.0 },
+      { id: "ca-bm",  grade: "B-", min: 70, max: 72,  points: 2.7 },
+      { id: "ca-cp",  grade: "C+", min: 67, max: 69,  points: 2.3 },
+      { id: "ca-c",   grade: "C",  min: 63, max: 66,  points: 2.0 },
+      { id: "ca-cm",  grade: "C-", min: 60, max: 62,  points: 1.7 },
+      { id: "ca-d",   grade: "D",  min: 50, max: 59,  points: 1.0 },
+      { id: "ca-f",   grade: "F",  min: 0,  max: 49,  points: 0.0 },
+    ],
+  },
+  {
+    id: "uk-standard",
+    name: "UK Classification",
+    isPreset: true,
+    grades: [
+      { id: "uk-1st", grade: "First (1st)", min: 70, max: 100, points: 4.0 },
+      { id: "uk-21",  grade: "Upper 2nd (2:1)", min: 60, max: 69, points: 3.3 },
+      { id: "uk-22",  grade: "Lower 2nd (2:2)", min: 50, max: 59, points: 2.7 },
+      { id: "uk-3rd", grade: "Third (3rd)",     min: 40, max: 49, points: 2.0 },
+      { id: "uk-f",   grade: "Fail",            min: 0,  max: 39, points: 0.0 },
+    ],
+  },
+  {
+    id: "simple-4point",
+    name: "Simple 4.0 Scale",
+    isPreset: true,
+    grades: [
+      { id: "s4-a", grade: "A", min: 90, max: 100, points: 4.0 },
+      { id: "s4-b", grade: "B", min: 80, max: 89,  points: 3.0 },
+      { id: "s4-c", grade: "C", min: 70, max: 79,  points: 2.0 },
+      { id: "s4-d", grade: "D", min: 60, max: 69,  points: 1.0 },
+      { id: "s4-f", grade: "F", min: 0,  max: 59,  points: 0.0 },
+    ],
+  },
+];
+
+export const DEFAULT_SCALE_ID = "hec-pakistan";
