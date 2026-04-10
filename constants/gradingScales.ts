@@ -37,6 +37,22 @@ export const PRESET_GRADING_SCALES: GradingScale[] = [
     ],
   },
   {
+    id: "umt",
+    name: "UMT — Univ. of Management & Technology (Relative, approx. %)",
+    isPreset: true,
+    grades: [
+      { id: "umt-a",  grade: "A+/A", min: 85, max: 100, points: 4.0 },
+      { id: "umt-am", grade: "A-",   min: 80, max: 84,  points: 3.7 },
+      { id: "umt-bp", grade: "B+",   min: 75, max: 79,  points: 3.3 },
+      { id: "umt-b",  grade: "B",    min: 70, max: 74,  points: 3.0 },
+      { id: "umt-bm", grade: "B-",   min: 65, max: 69,  points: 2.7 },
+      { id: "umt-cp", grade: "C+",   min: 60, max: 64,  points: 2.3 },
+      { id: "umt-c",  grade: "C",    min: 55, max: 59,  points: 2.0 },
+      { id: "umt-cm", grade: "C-",   min: 50, max: 54,  points: 1.7 },
+      { id: "umt-f",  grade: "F",    min: 0,  max: 49,  points: 0.0 },
+    ],
+  },
+  {
     id: "us-standard",
     name: "US Standard (4.0)",
     isPreset: true,
