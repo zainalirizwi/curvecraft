@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { AppProvider } from "@/contexts/AppContext";
 
-const SITE_URL = "https://www.gradeforge.com";
+const SITE_URL = "https://www.gradeforge.site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

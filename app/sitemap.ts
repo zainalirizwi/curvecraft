@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://www.gradeforge.com";
+const SITE_URL = "https://www.gradeforge.site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const universities = ["ucp", "umt", "uol", "hec"];
