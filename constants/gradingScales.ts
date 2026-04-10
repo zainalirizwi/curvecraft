@@ -53,6 +53,22 @@ export const PRESET_GRADING_SCALES: GradingScale[] = [
     ],
   },
   {
+    id: "uol",
+    name: "UOL — University of Lahore (approx. %)",
+    isPreset: true,
+    grades: [
+      { id: "uol-a",  grade: "A",  min: 85, max: 100, points: 4.0 },
+      { id: "uol-am", grade: "A-", min: 80, max: 84,  points: 3.75 },
+      { id: "uol-bp", grade: "B+", min: 75, max: 79,  points: 3.50 },
+      { id: "uol-b",  grade: "B",  min: 70, max: 74,  points: 3.00 },
+      { id: "uol-cp", grade: "C+", min: 65, max: 69,  points: 2.50 },
+      { id: "uol-c",  grade: "C",  min: 60, max: 64,  points: 2.00 },
+      { id: "uol-dp", grade: "D+", min: 55, max: 59,  points: 1.50 },
+      { id: "uol-d",  grade: "D",  min: 50, max: 54,  points: 1.00 },
+      { id: "uol-f",  grade: "F",  min: 0,  max: 49,  points: 0.0 },
+    ],
+  },
+  {
     id: "us-standard",
     name: "US Standard (4.0)",
     isPreset: true,
