@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { AppProvider } from "@/contexts/AppContext";
 
-const SITE_URL = "https://curvecraft.app"; // ← replace with your real domain after buying it
+const SITE_URL = "https://www.gradeforge.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

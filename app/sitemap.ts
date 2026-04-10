@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://curvecraft.app"; // ← replace with your real domain
+const SITE_URL = "https://www.gradeforge.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const universities = ["ucp", "umt", "uol", "hec"];
